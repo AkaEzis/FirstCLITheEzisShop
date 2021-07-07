@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+.nav_container {
+  background-color: aquamarine;
+}
+.navbar-component{
+  font-size: 0.5cm;
+  word-spacing: 8cm;
+  font-style: normal;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 600;
+
+ }
+ .navbar-brand{
+   font-weight: 600;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+
