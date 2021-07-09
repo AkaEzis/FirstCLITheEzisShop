@@ -5,14 +5,14 @@ export default function Navbar() {
         <div className='nav_container'>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
-                    <a className="navbar-brand" href="#">The Ezis Shop</a>
-                    <a className='navbar-component' href="#"> Productos </a>
-                    <a className='navbar-component' href="#"> Nosotros </a>
-                    <a className='navbar-component' href="#"> Carrito </a>
-                    
+                    <p className="navbar-brand" href="#">The Ezis Shop</p>
+                    <p className='navbar-component' href="#"> Productos </p>
+                    <p className='navbar-component' href="#"> Nosotros </p>                 
+            
                 </div>
             </nav>
 
         </div>
     )
+    
 }
