@@ -1,6 +1,7 @@
 import React from 'react'
+import CartWidget from './CartWidget'
 
-export default function Navbar() {
+function Navbar() {
     return (
         <div className='nav_container'>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -10,9 +11,11 @@ export default function Navbar() {
                     <p className='navbar-component' href="#"> Nosotros </p>                 
             
                 </div>
+                <CartWidget />
             </nav>
 
         </div>
     )
     
 }
+export default Navbar 

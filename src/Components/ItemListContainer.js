@@ -1,10 +1,11 @@
 import React from 'react'
 
-const App = () => {
-    return(
-        <p>
+function ItemListContainer(props) {
 
-        </p>
+    return(
+        <div>
+            <h3 className= "container-fluid"> {props.greeting} </h3>
+        </div>
     );
 }
-render(<App />), document.getElementById ("root");
+export default ItemListContainer
