@@ -1,19 +1,46 @@
-import React, { useState, useEffect} from "react"
+import React, { useState } from "react"
 
-export default function ItemCount() { 
+function ItemCount(props) { 
+    const [qty,setQty]= useState(props.initial)
+    
+    
 
-    const [stock,setStock]= useState(5);
-    const [initial,setInitial]= useState(0);
-    const [onAdd,setOnAdd]= useState(+1<5);
+    function onAdd(){
+        alert(`Agregaste  ${qty}  productos!`)
+    }
+    function resta(){
+        const newValue = qty-1
+        if(newValue>=props.initial){
+            setQty(newValue)
+            
+        }
+        console.log (qty)
+    }
+
+    function suma(){
+        const newValue= qty+1
+        if(newValue<=props.stock){
+            setQty(newValue)
+            
+        }
+        console.log (qty)
+    }
 
     return(
         <div>
-            <h1> Stock {stock} </h1>
-            <h2>  {initial}</h2>
-            <h3> + - {onAdd} </h3>
+            <h1> Stock {props.stock} </h1>
+            <div className="controls">
+                <button onClick={resta}> - </button>
+                <span>  {qty} </span>
+                <button onClick={suma}> + </button>
+            </div>
+            <button onClick={onAdd}>Agregar al carrito</button>
+            
         </div>
+        
+        
     )
 }
-
+export default ItemCount
 
 

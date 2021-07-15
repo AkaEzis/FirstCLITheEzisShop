@@ -1,3 +1,11 @@
-.cart-icon{
-   white-space: normal;
+.nav_container{
+width: 100%;
+background-color: red !important
+};
+div.cart-icon{
+   width: 20%;
+   background-color: blue;
 }
+.controls{
+   display: flex;
+};

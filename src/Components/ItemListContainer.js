@@ -6,7 +6,7 @@ function ItemListContainer(props) {
     return(
         <div>
             <h3 className= "container-fluid"> {props.greeting} </h3>
-            <ItemCount stock= '5' initial='0' />
+            <ItemCount stock= { 5 } initial={ 1 } />
         </div>
     );
 }

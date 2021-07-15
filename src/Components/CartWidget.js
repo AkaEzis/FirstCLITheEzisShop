@@ -3,9 +3,9 @@ import React from 'react'
 function CartWidget() {
      
     return (
-        <div class='cart-icon'>
+        <div className='cart-icon'>
 
-            <i class="fas fa-shopping-cart"></i>
+            <i className="fas fa-shopping-cart"></i>
 
         </div>
     );
