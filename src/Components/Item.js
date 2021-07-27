@@ -1,23 +1,23 @@
 import React, { useEffect, useState } from 'react';
 import  Card  from 'react-bootstrap/Card';
-import ItemList from './ItemList'
+import ItemCount from "./ItemCount"
 
-function item(props) {
-  
+function Item(props) {
+  console.log(props)
   return(
   <div>
-    <ItemList/>
     <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="https://www.xt-pc.com.ar/img/productos/Pics_Prod/MOU458.jpg" />
+      <Card.Img variant="top" src={props.image} />
       <Card.Body>
-        <Card.Title>Mouse Logitech G PRO 1600DPI</Card.Title>
+        <Card.Title>{props.title}</Card.Title>
         <Card.Text>
-        Mouse Logitech G PRO 1600DPI RGB en blanco, negro y gris.
+        {props.descripcion}
         </Card.Text>
       </Card.Body>
     </Card>
+    <ItemCount stock= { props.stock } initial={ 1 } />
   </div>
   )
 }
 
-export default item
+export default Item
